@@ -51,41 +51,164 @@ class Homescreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: double.infinity,
-                width: double.infinity,
+                color: Colors.white,
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          height: 30.0,
-                          width: 30.0,
-                          color: Colors.yellow,
+                        Card(
+                          elevation: 6,
+                          shadowColor: Colors.black,
+                          child: Container(
+                            height: 125.0,
+                            width: 125.0,
+                          ),
+                          color: Colors.white,
                         ),
-                        Container(
-                          height: 30.0,
-                          width: 30.0,
-                          color: Colors.green,
-                        )
+                        Card(
+                          elevation: 6,
+                          shadowColor: Colors.black,
+                          child: Container(
+                            height: 125.0,
+                            width: 125.0,
+                          ),
+                          color: Colors.white,
+                        ),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          height: 30.0,
-                          width: 30.0,
+                        Card(
+                          elevation: 6,
+                          shadowColor: Colors.black,
+                          child: Container(
+                            height: 125.0,
+                            width: 125.0,
+                          ),
                           color: Colors.white,
                         ),
-                        Container(
-                          height: 30.0,
-                          width: 30.0,
-                          color: Colors.blue,
-                        )
+                        Card(
+                          elevation: 6,
+                          shadowColor: Colors.black,
+                          child: Container(
+                            height: 125.0,
+                            width: 125.0,
+                          ),
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                    ListView(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.vertical,
+                      children: [
+                        DataTable(
+                          columns: [
+                            DataColumn(
+                              label: Text(
+                                'State/UT',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.grey.shade900,
+                                ),
+                              ),
+                            ),
+                            DataColumn(
+                              label: Text(
+                                'C',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.pink.shade600,
+                                ),
+                              ),
+                            ),
+                            DataColumn(
+                              label: Text(
+                                'A',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.blue.shade600,
+                                ),
+                              ),
+                            ),
+                            DataColumn(
+                              label: Text(
+                                'R',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.green.shade600,
+                                ),
+                              ),
+                            ),
+                            DataColumn(
+                              label: Text(
+                                'D',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Montserrat',
+                                  color: Colors.grey.shade700,
+                                ),
+                              ),
+                            ),
+                          ],
+                          rows: [
+                            DataRow(
+                              cells: [
+                                DataCell(Text('Kerala')),
+                                DataCell(Text('100')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                              ],
+                            ),
+                            DataRow(
+                              cells: [
+                                DataCell(Text('Kerala')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                              ],
+                            ),
+                            DataRow(
+                              cells: [
+                                DataCell(Text('Kerala')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                              ],
+                            ),
+                            DataRow(
+                              cells: [
+                                DataCell(Text('Kerala')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                              ],
+                            ),
+                            DataRow(
+                              cells: [
+                                DataCell(Text('Kerala')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                                DataCell(Text('1')),
+                              ],
+                            ),
+                          ],
+                        ),
                       ],
                     )
                   ],
                 ),
-                color: Colors.red,
               ),
             )
           ],
