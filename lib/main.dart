@@ -15,9 +15,13 @@ class CoronaVirusTracker extends StatelessWidget {
       ),
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting)
-          return MaterialApp(home: Splash());
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            home: Splash(),
+          );
         else
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             home: Homescreen(),
           );
       },
