@@ -49,171 +49,223 @@ class Homescreen extends StatelessWidget {
                 ],
               ),
             ),
-            Expanded(
-              child: Container(
-                color: Colors.white,
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Card(
-                          elevation: 6,
-                          shadowColor: Colors.black,
-                          child: Container(
-                            height: 125.0,
-                            width: 125.0,
+            Container(
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+                        elevation: 6,
+                        shadowColor: Colors.black,
+                        child: Container(
+                          height: 125.0,
+                          width: 125.0,
+                        ),
+                        color: Colors.white,
+                      ),
+                      Card(
+                        elevation: 6,
+                        shadowColor: Colors.black,
+                        child: Container(
+                          height: 125.0,
+                          width: 125.0,
+                        ),
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+                        elevation: 6,
+                        shadowColor: Colors.black,
+                        child: Container(
+                          height: 125.0,
+                          width: 125.0,
+                        ),
+                        color: Colors.white,
+                      ),
+                      Card(
+                        elevation: 6,
+                        shadowColor: Colors.black,
+                        child: Container(
+                          height: 125.0,
+                          width: 125.0,
+                        ),
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                  DataTable(
+                    columns: [
+                      DataColumn(
+                        label: Text(
+                          'State/UT',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat',
+                            color: Colors.grey.shade900,
                           ),
-                          color: Colors.white,
                         ),
-                        Card(
-                          elevation: 6,
-                          shadowColor: Colors.black,
-                          child: Container(
-                            height: 125.0,
-                            width: 125.0,
+                      ),
+                      DataColumn(
+                        label: Text(
+                          'C',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat',
+                            color: Colors.pink.shade600,
                           ),
-                          color: Colors.white,
                         ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Card(
-                          elevation: 6,
-                          shadowColor: Colors.black,
-                          child: Container(
-                            height: 125.0,
-                            width: 125.0,
+                      ),
+                      DataColumn(
+                        label: Text(
+                          'A',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat',
+                            color: Colors.blue.shade600,
                           ),
-                          color: Colors.white,
                         ),
-                        Card(
-                          elevation: 6,
-                          shadowColor: Colors.black,
-                          child: Container(
-                            height: 125.0,
-                            width: 125.0,
+                      ),
+                      DataColumn(
+                        label: Text(
+                          'R',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat',
+                            color: Colors.green.shade600,
                           ),
-                          color: Colors.white,
                         ),
-                      ],
-                    ),
-                    ListView(
-                      shrinkWrap: true,
-                      scrollDirection: Axis.vertical,
-                      children: [
-                        DataTable(
-                          columns: [
-                            DataColumn(
-                              label: Text(
-                                'State/UT',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.grey.shade900,
-                                ),
-                              ),
-                            ),
-                            DataColumn(
-                              label: Text(
-                                'C',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.pink.shade600,
-                                ),
-                              ),
-                            ),
-                            DataColumn(
-                              label: Text(
-                                'A',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.blue.shade600,
-                                ),
-                              ),
-                            ),
-                            DataColumn(
-                              label: Text(
-                                'R',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.green.shade600,
-                                ),
-                              ),
-                            ),
-                            DataColumn(
-                              label: Text(
-                                'D',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.grey.shade700,
-                                ),
-                              ),
-                            ),
-                          ],
-                          rows: [
-                            DataRow(
-                              cells: [
-                                DataCell(Text('Kerala')),
-                                DataCell(Text('100')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                              ],
-                            ),
-                            DataRow(
-                              cells: [
-                                DataCell(Text('Kerala')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                              ],
-                            ),
-                            DataRow(
-                              cells: [
-                                DataCell(Text('Kerala')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                              ],
-                            ),
-                            DataRow(
-                              cells: [
-                                DataCell(Text('Kerala')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                              ],
-                            ),
-                            DataRow(
-                              cells: [
-                                DataCell(Text('Kerala')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                                DataCell(Text('1')),
-                              ],
-                            ),
-                          ],
+                      ),
+                      DataColumn(
+                        label: Text(
+                          'D',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat',
+                            color: Colors.grey.shade700,
+                          ),
                         ),
-                      ],
-                    )
-                  ],
-                ),
+                      ),
+                    ],
+                    rows: [
+                      DataRow(
+                        cells: [
+                          DataCell(Text('Kerala')),
+                          DataCell(Text('100')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                        ],
+                      ),
+                      DataRow(
+                        cells: [
+                          DataCell(Text('Kerala')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                        ],
+                      ),
+                      DataRow(
+                        cells: [
+                          DataCell(Text('Kerala')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                        ],
+                      ),
+                      DataRow(
+                        cells: [
+                          DataCell(Text('Kerala')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                          DataCell(Text('1')),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
               ),
             )
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavbar(),
+    );
+  }
+}
+
+class BottomNavbar extends StatefulWidget {
+  const BottomNavbar({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  _BottomNavbarState createState() => _BottomNavbarState();
+}
+
+class _BottomNavbarState extends State<BottomNavbar> {
+  int _selectedIndex = 0;
+  // static const List<Widget> _widgetOptions = <Widget>[
+  //   Text('Home Page',
+  //       style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+  //   Text('Search Page',
+  //       style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+  //   Text('Profile Page',
+  //       style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+  // ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomNavigationBar(
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.home,
+          ),
+          label: 'Home',
+        ),
+        BottomNavigationBarItem(backgroundColor: Colors.grey,
+          icon: Icon(
+            Icons.pie_chart_outline_outlined,
+          ),
+          label: 'Stats',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.sports_basketball_outlined,
+          ),
+          label: 'News',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.medical_services_outlined,
+          ),
+          label: 'Tips',
+        ),
+      ],
+      type: BottomNavigationBarType.shifting,
+      currentIndex: _selectedIndex,
+      selectedItemColor: Colors.pink,
+      iconSize: 30,
+      onTap: _onItemTapped,
+      elevation: 2,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
+      
     );
   }
 }
