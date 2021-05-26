@@ -1,5 +1,5 @@
-import 'package:coronavirus_tracker/views/home_screen/home_screen.dart';
-import 'package:coronavirus_tracker/views/splash_screen/splash_screen.dart';
+import 'package:coronavirus_tracker/views/home_screen.dart';
+import 'package:coronavirus_tracker/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(CoronaVirusTracker());
@@ -10,7 +10,7 @@ class CoronaVirusTracker extends StatelessWidget {
     return FutureBuilder(
       future: Future.delayed(
         Duration(
-          seconds: 3,
+          seconds: 4,
         ),
       ),
       builder: (context, AsyncSnapshot snapshot) {
